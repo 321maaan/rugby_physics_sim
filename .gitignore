@@ -1,6 +1,16 @@
 # Prerequisites
 *.d
 
+# Visual Studio
+.vs/
+**/.vs/
+
+# Build files
+Debug/
+Release/
+x64/
+x86/
+
 # Compiled Object files
 *.slo
 *.lo
