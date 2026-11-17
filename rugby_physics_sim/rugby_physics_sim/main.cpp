@@ -24,7 +24,7 @@ Vec3 Get_position_by_time(const double t, const Vec3& x0, const Vec3& v0, const 
     return x0 + t * v0 + 0.5 * acceleration * (t * t);
 }
 
-void WriteDataToFile(std::ofstream& out, const double time, const Vec3& pos, const Vec3& omega, const Vec3& omega_derivative)
+inline void WriteDataToFile(std::ofstream& out, const double time, const Vec3& pos, const Vec3& omega, const Vec3& omega_derivative)
 {
     out << time << ','
         << pos.x() << ',' << pos.y() << ',' << pos.z() << ','
